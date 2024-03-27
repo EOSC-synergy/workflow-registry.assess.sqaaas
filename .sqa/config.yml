@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.1.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    gitlab.com/dtgeo/workflow-registry:
+      branch: test/sqaaas
+      repo: https://gitlab.com/dtgeo/workflow-registry
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      gitlab.com/dtgeo/workflow-registry git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-rose-owl.sh
+        container: qc.acc_hazy-xanthic-bear
+  QC.Doc:
+    repos:
+      gitlab.com/dtgeo/workflow-registry find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-saffron-affenpinscher.sh
+        container: qc.doc_hazy-bronze-quoll
+      gitlab.com/dtgeo/workflow-registry git:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-amethyst-koala.sh
+        container: qc.doc_silly-wheat-elephant
+      gitlab.com/dtgeo/workflow-registry markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-magnolia-robin.sh
+        container: qc.doc_stealthy-fuchsia-millipede
+  QC.Lic:
+    repos:
+      gitlab.com/dtgeo/workflow-registry licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-khaki-antelope.sh
+        container: qc.lic_slaphappy-ochre-nightingale
+  QC.Sec:
+    repos:
+      gitlab.com/dtgeo/workflow-registry bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-xanthic-heron.sh
+        container: qc.sec_lanky-wheat-ibis
+  QC.Sty:
+    repos:
+      gitlab.com/dtgeo/workflow-registry flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-violet-corgi.sh
+        container: qc.sty_lousy-cerise-penguin
+  QC.Uni:
+    repos:
+      gitlab.com/dtgeo/workflow-registry commands:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-salmon-chipmunk.sh
+        container: qc.uni_muggy-cerulean-kiwi
+  QC.Ver:
+    repos:
+      gitlab.com/dtgeo/workflow-registry get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-magnolia-penguin.sh
+        container: qc.ver_flimsy-pear-buffalo
+timeout: 5400
