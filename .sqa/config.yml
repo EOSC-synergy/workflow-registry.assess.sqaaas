@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-charcoal-starfish.sh
-        container: qc.acc_cloudy-viridian-russel
+        - /usr/bin/env sh .sqa/script.jumpy-violet-zebu.sh
+        container: qc.acc_homely-chestnut-cuscus
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-fuchsia-chihuahua.sh
-        container: qc.doc_pokey-lemon-frog
+        - /usr/bin/env sh .sqa/script.pretty-pear-heron.sh
+        container: qc.doc_lumpy-auburn-tapir
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-periwinkle-scorpion.sh
-        container: qc.doc_sunny-maroon-grasshopper
+        - /usr/bin/env sh .sqa/script.breezy-charcoal-squirrel.sh
+        container: qc.doc_lanky-olive-ladybird
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-cerise-sparrow.sh
-        container: qc.doc_gamy-gold-tarantula
+        - /usr/bin/env sh .sqa/script.lousy-alizarin-mongrel.sh
+        container: qc.doc_flaky-cardinal-koala
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-white-baboon.sh
-        container: qc.lic_droopy-burgundy-akbash
+        - /usr/bin/env sh .sqa/script.goopy-linen-eagle.sh
+        container: qc.lic_pretty-charcoal-coyote
   QC.Sec:
     repos:
       gitlab.com/dtgeo/workflow-registry bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-denim-burmese.sh
-        container: qc.sec_gimpy-periwinkle-scorpion
+        - /usr/bin/env sh .sqa/script.shaggy-tangerine-otter.sh
+        container: qc.sec_homey-mustard-hedgehog
   QC.Sty:
     repos:
       gitlab.com/dtgeo/workflow-registry flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-vermilion-warthog.sh
-        container: qc.sty_crappy-brass-flounder
+        - /usr/bin/env sh .sqa/script.pretty-denim-earwig.sh
+        container: qc.sty_woolly-scarlet-scorpion
   QC.Uni:
     repos:
       gitlab.com/dtgeo/workflow-registry commands:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-aqua-liger.sh
-        container: qc.uni_hazy-gamboge-bird
+        - /usr/bin/env sh .sqa/script.snippy-scarlet-foxhound.sh
+        container: qc.uni_hasty-brass-salamander
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-yellow-binturong.sh
-        container: qc.ver_homey-flax-magpie
+        - /usr/bin/env sh .sqa/script.goopy-peach-hare.sh
+        container: qc.ver_squeaky-ochre-angora
 timeout: 5400
