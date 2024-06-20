@@ -44,7 +44,7 @@
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/34/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/34/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -96,7 +96,7 @@
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -143,7 +143,7 @@
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -190,7 +190,7 @@
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -234,7 +234,7 @@
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/52/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/52/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -276,7 +276,7 @@
                                         "mdl --json ."
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/61/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/61/log?consoleFull"
                                 },
                                 "level": "RECOMMENDED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -328,7 +328,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "Traceback (most recent call last):\n  File \"/usr/bin/get_git_tags.py\", line 50, in <module>\n    print(main())\n  File \"/usr/bin/get_git_tags.py\", line 45, in main\n    repo = git.Repo(args.repo_path, odbt=git.db.GitDB)\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 224, in __init__\n    self.working_dir: Optional[PathLike] = self._working_tree_dir or self.common_dir\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 307, in common_dir\n    raise InvalidGitRepositoryError()\ngit.exc.InvalidGitRepositoryError",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/79/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/79/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -371,7 +371,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "Traceback (most recent call last):\n  File \"/usr/bin/get_git_tags.py\", line 50, in <module>\n    print(main())\n  File \"/usr/bin/get_git_tags.py\", line 45, in main\n    repo = git.Repo(args.repo_path, odbt=git.db.GitDB)\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 224, in __init__\n    self.working_dir: Optional[PathLike] = self._working_tree_dir or self.common_dir\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 307, in common_dir\n    raise InvalidGitRepositoryError()\ngit.exc.InvalidGitRepositoryError",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/79/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/79/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
@@ -414,7 +414,7 @@
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "Traceback (most recent call last):\n  File \"/usr/bin/get_git_tags.py\", line 50, in <module>\n    print(main())\n  File \"/usr/bin/get_git_tags.py\", line 45, in main\n    repo = git.Repo(args.repo_path, odbt=git.db.GitDB)\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 224, in __init__\n    self.working_dir: Optional[PathLike] = self._working_tree_dir or self.common_dir\n  File \"/usr/local/lib/python3.7/dist-packages/git/repo/base.py\", line 307, in common_dir\n    raise InvalidGitRepositoryError()\ngit.exc.InvalidGitRepositoryError",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%25252FDTCV2%25252FWF5201/1/execution/node/79/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/workflow-registry.assess.sqaaas/job/WP5%252FDTCV2%252FWF5201/4/execution/node/79/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
                                 "build_repo": "https://github.com/eosc-synergy/workflow-registry.assess.sqaaas"
