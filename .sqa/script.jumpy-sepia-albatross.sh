@@ -5,5 +5,5 @@
 
 (
 cd gitlab.com/dtgeo/workflow-registry &&
-    mdl --json .
+    licensee detect . --confidence 60 --json 
 )

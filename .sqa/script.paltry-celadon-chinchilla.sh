@@ -5,5 +5,5 @@
 
 (
 cd gitlab.com/dtgeo/workflow-registry &&
-    echo 'Here we will execute COMPSs'
+    git rev-parse --is-inside-work-tree 
 )

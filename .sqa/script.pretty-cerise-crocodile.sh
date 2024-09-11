@@ -5,5 +5,5 @@
 
 (
 cd gitlab.com/dtgeo/workflow-registry &&
-    flake8 .
+    git rev-parse --is-inside-work-tree 
 )
