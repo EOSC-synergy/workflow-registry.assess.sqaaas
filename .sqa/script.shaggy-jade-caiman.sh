@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.com/dtgeo/workflow-registry/example_workflow/matmul &&
-    licensee detect . --confidence 60 --json
+cd gitlab.com/dtgeo/workflow-management-system/workflow-registry &&
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

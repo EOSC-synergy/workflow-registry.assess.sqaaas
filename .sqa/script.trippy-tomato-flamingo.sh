@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.com/dtgeo/workflow-registry/example_workflow/matmul &&
-    git rev-parse --is-inside-work-tree
+cd gitlab.com/dtgeo/workflow-management-system/workflow-registry &&
+    git rev-parse --is-inside-work-tree 
 )

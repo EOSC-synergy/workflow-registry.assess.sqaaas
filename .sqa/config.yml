@@ -2,64 +2,63 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.1.1
-      repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    gitlab.com/dtgeo/workflow-registry:
       branch: main
-      repo: https://gitlab.com/dtgeo/workflow-registry
-      subfolder: example_workflow/matmul
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    gitlab.com/dtgeo/workflow-management-system/workflow-registry:
+      branch: main
+      repo: https://gitlab.com/dtgeo/workflow-management-system/workflow-registry
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      gitlab.com/dtgeo/workflow-registry git:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-indigo-retriever.sh
-        container: qc.acc_ugly-denim-walrus
+        - /usr/bin/env sh .sqa/script.trippy-tomato-flamingo.sh
+        container: qc.acc_slimy-emerald-saola
   QC.Doc:
     repos:
-      gitlab.com/dtgeo/workflow-registry find_doc_files.py:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-goldenrod-wombat.sh
-        container: qc.doc_crabby-aqua-dolphin
-      gitlab.com/dtgeo/workflow-registry git:
+        - /usr/bin/env sh .sqa/script.paltry-silver-llama.sh
+        container: qc.doc_sloppy-harlequin-buffalo
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-tomato-toad.sh
-        container: qc.doc_nippy-carmine-scorpion
-      gitlab.com/dtgeo/workflow-registry markdownlint:
+        - /usr/bin/env sh .sqa/script.sunny-bistre-ferret.sh
+        container: qc.doc_freaky-cornflower-spoonbill
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-persimmon-cuttlefish.sh
-        container: qc.doc_baggy-seashell-octopus
+        - /usr/bin/env sh .sqa/script.shabby-razzmatazz-spoonbill.sh
+        container: qc.doc_lanky-gold-booby
   QC.Lic:
     repos:
-      gitlab.com/dtgeo/workflow-registry licensee:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-beige-foxhound.sh
-        container: qc.lic_stinky-sangria-maltese
+        - /usr/bin/env sh .sqa/script.lovely-dandelion-gorilla.sh
+        container: qc.lic_gummy-burgundy-fish
   QC.Sec:
     repos:
-      gitlab.com/dtgeo/workflow-registry bandit:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-khaki-dane.sh
-        container: qc.sec_flabby-amethyst-quail
+        - /usr/bin/env sh .sqa/script.shaggy-jade-caiman.sh
+        container: qc.sec_homey-rose-frigatebird
   QC.Sty:
     repos:
-      gitlab.com/dtgeo/workflow-registry flake8:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-olive-fousek.sh
-        container: qc.sty_snippy-red-javanese
+        - /usr/bin/env sh .sqa/script.clammy-rust-drever.sh
+        container: qc.sty_wheezy-charcoal-foxhound
   QC.Uni:
     repos:
-      gitlab.com/dtgeo/workflow-registry pytest:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-carmine-beagle.sh
-        container: qc.uni_leaky-cinnabar-impala
+        - /usr/bin/env sh .sqa/script.flaky-buff-impala.sh
+        container: qc.uni_beady-cobalt-wildebeest
   QC.Ver:
     repos:
-      gitlab.com/dtgeo/workflow-registry get_git_tags.py:
+      gitlab.com/dtgeo/workflow-management-system/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-blue-crab.sh
-        container: qc.ver_dorky-mustard-albatross
+        - /usr/bin/env sh .sqa/script.leaky-aquamarine-clam.sh
+        container: qc.ver_gimpy-white-toad
 timeout: 5400

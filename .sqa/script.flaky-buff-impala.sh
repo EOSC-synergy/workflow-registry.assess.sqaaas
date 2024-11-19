@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd gitlab.com/dtgeo/workflow-registry/example_workflow/matmul &&
-    get_git_tags.py
+cd gitlab.com/dtgeo/workflow-management-system/workflow-registry &&
+    pytest  --json-report  --json-report-indent 4
 )
