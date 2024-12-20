@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-cerise-crocodile.sh
-        container: qc.acc_zippy-magenta-terrier
+        - /usr/bin/env sh .sqa/script.homely-yellow-oriole.sh
+        container: qc.acc_clammy-ruby-turkey
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-rose-fly.sh
-        container: qc.doc_slaphappy-purple-cat
+        - /usr/bin/env sh .sqa/script.scaly-violet-gharial.sh
+        container: qc.doc_randy-magenta-mastiff
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-celadon-chinchilla.sh
-        container: qc.doc_lousy-fuchsia-whale
+        - /usr/bin/env sh .sqa/script.scaly-russet-falcon.sh
+        container: qc.doc_cheeky-pear-lion
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-rose-eleuth.sh
-        container: qc.doc_wheezy-coral-grasshopper
+        - /usr/bin/env sh .sqa/script.ugly-carmine-balinese.sh
+        container: qc.doc_wiggy-vermilion-bear
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-sepia-albatross.sh
-        container: qc.lic_jumpy-indigo-rhinoceros
+        - /usr/bin/env sh .sqa/script.ready-sepia-bulldog.sh
+        container: qc.lic_stinky-grey-tamarin
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-wheat-bandicoot.sh
-        container: qc.ver_clammy-tan-ostrich
+        - /usr/bin/env sh .sqa/script.chummy-yellow-serval.sh
+        container: qc.ver_craggy-amethyst-millipede
 timeout: 5400
