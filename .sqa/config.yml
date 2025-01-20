@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-grey-chow.sh
-        container: qc.acc_freaky-silver-vole
+        - /usr/bin/env sh .sqa/script.trippy-saffron-ant.sh
+        container: qc.acc_sunny-crimson-budgerigar
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-orange-booby.sh
-        container: qc.doc_flaky-red-alligator
+        - /usr/bin/env sh .sqa/script.cheeky-buff-molly.sh
+        container: qc.doc_hilly-puce-skunk
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-gold-squid.sh
-        container: qc.doc_shaggy-beige-hyena
+        - /usr/bin/env sh .sqa/script.frumpy-jade-gecko.sh
+        container: qc.doc_snippy-plum-caracal
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-tan-cassowary.sh
-        container: qc.doc_wheezy-gold-bongo
+        - /usr/bin/env sh .sqa/script.silly-bronze-insect.sh
+        container: qc.doc_lousy-taupe-reindeer
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-azure-akita.sh
-        container: qc.lic_wimpy-heliotrope-devil
+        - /usr/bin/env sh .sqa/script.shaky-jade-rattlesnake.sh
+        container: qc.lic_jumpy-tangerine-argentino
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-amethyst-slug.sh
-        container: qc.ver_gummy-platinum-pinscher
+        - /usr/bin/env sh .sqa/script.lumpy-flax-lizard.sh
+        container: qc.ver_bumpy-lime-quail
 timeout: 5400
