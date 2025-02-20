@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-orange-capybara.sh
-        container: qc.acc_skanky-indigo-donkey
+        - /usr/bin/env sh .sqa/script.clammy-charcoal-corgi.sh
+        container: qc.acc_goopy-sepia-pinscher
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-crimson-echidna.sh
-        container: qc.doc_nippy-bistre-zorse
+        - /usr/bin/env sh .sqa/script.pretty-mauve-eel.sh
+        container: qc.doc_foggy-dandelion-numbat
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-silver-squid.sh
-        container: qc.doc_paltry-ochre-loon
+        - /usr/bin/env sh .sqa/script.nerdy-corn-ragdoll.sh
+        container: qc.doc_bluesy-heliotrope-dhole
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-turquoise-caiman.sh
-        container: qc.doc_dorky-rose-fox
+        - /usr/bin/env sh .sqa/script.crappy-grey-rat.sh
+        container: qc.doc_pasty-platinum-flamingo
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-brass-fousek.sh
-        container: qc.lic_zippy-thistle-rabbit
+        - /usr/bin/env sh .sqa/script.trippy-buff-fossa.sh
+        container: qc.lic_crabby-ruby-leopard
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-amber-mastiff.sh
-        container: qc.ver_silly-xanthic-javanese
+        - /usr/bin/env sh .sqa/script.gimpy-heliotrope-weasel.sh
+        container: qc.ver_jumpy-green-kangaroo
 timeout: 5400
