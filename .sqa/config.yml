@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     gitlab.com/dtgeo/workflow-registry:
       branch: test/sqaaas_simplified
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-black-lionfish.sh
-        container: qc.acc_chummy-champagne-spoonbill
+        - /usr/bin/env sh .sqa/script.queasy-yellow-harrier.sh
+        container: qc.acc_gloppy-white-mandrill
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-magenta-oriole.sh
-        container: qc.doc_cranky-mauve-forest
+        - /usr/bin/env sh .sqa/script.foggy-goldenrod-malamute.sh
+        container: qc.doc_ugly-plum-budgerigar
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-azure-malamute.sh
-        container: qc.doc_slaphappy-tangerine-terrier
+        - /usr/bin/env sh .sqa/script.crabby-myrtle-dingo.sh
+        container: qc.doc_cloudy-blue-kangaroo
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-chartreuse-grasshopper.sh
-        container: qc.doc_shabby-cobalt-skunk
+        - /usr/bin/env sh .sqa/script.cozy-xanthic-ragdoll.sh
+        container: qc.doc_beady-grey-caracal
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-blue-manatee.sh
-        container: qc.lic_slimy-tan-sponge
+        - /usr/bin/env sh .sqa/script.flimsy-brown-shrimp.sh
+        container: qc.lic_leaky-ultramarine-zebu
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-buff-bonobo.sh
-        container: qc.ver_sickly-cinnabar-cow
+        - /usr/bin/env sh .sqa/script.bumpy-cerise-chamois.sh
+        container: qc.ver_homey-auburn-hound
 timeout: 5400
