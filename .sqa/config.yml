@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-gold-caiman.sh
-        container: qc.acc_crappy-heliotrope-catfish
+        - /usr/bin/env sh .sqa/script.leaky-firebrick-monkey.sh
+        container: qc.acc_sunny-lime-bloodhound
   QC.Doc:
     repos:
       gitlab.com/dtgeo/workflow-registry find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-cobalt-crane.sh
-        container: qc.doc_sickly-amber-quokka
+        - /usr/bin/env sh .sqa/script.scummy-taupe-lemming.sh
+        container: qc.doc_pokey-cream-gar
       gitlab.com/dtgeo/workflow-registry git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-rose-baboon.sh
-        container: qc.doc_nerdy-linen-tiger
+        - /usr/bin/env sh .sqa/script.bumpy-myrtle-hippopotamus.sh
+        container: qc.doc_homely-ultramarine-dhole
       gitlab.com/dtgeo/workflow-registry markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-celadon-wolf.sh
-        container: qc.doc_thirsty-black-cuscus
+        - /usr/bin/env sh .sqa/script.goopy-chestnut-goose.sh
+        container: qc.doc_shaggy-indigo-eagle
   QC.Lic:
     repos:
       gitlab.com/dtgeo/workflow-registry licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-indigo-mau.sh
-        container: qc.lic_homely-copper-tapir
+        - /usr/bin/env sh .sqa/script.ready-cardinal-butterfly.sh
+        container: qc.lic_lanky-ruby-orangutan
   QC.Ver:
     repos:
       gitlab.com/dtgeo/workflow-registry get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cerulean-indri.sh
-        container: qc.ver_lousy-mauve-rottweiler
+        - /usr/bin/env sh .sqa/script.gummy-xanthic-lionfish.sh
+        container: qc.ver_homely-periwinkle-buzzard
 timeout: 5400
